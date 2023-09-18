@@ -1,20 +1,21 @@
 #!/usr/bin/env python3
-# ชื่อ นามสกุล ชื่อเล่น
-# 6XXXXXXXX
+# เมษนี ลายเฮือง
+# 650510676
 # HW11_1
-# 204203 Sec 00B
+# 204203 Sec 002
 
 # 0) ** Import pandas as pd.**
+import pandas as pd
 # 0) ** Read ./input.txt as a dataframe called sal.**
 ''' DO PART 0 FIRST '''
-
+sal = pd.read_csv('input.txt')
 
 # 1) ** then show the shape of the data frame
 
 
 def q01():
     print("Q01")
-    result = None   # edit this
+    result = sal   # edit this
 
     print(result)   # Dont change this
 
@@ -23,7 +24,7 @@ def q01():
 
 def q02():
     print("Q02")
-    result = None   # edit this
+    result = sal.head()   # edit this
 
     print(result)   # Dont change this
 
@@ -33,7 +34,7 @@ def q02():
 
 def q03():
     print("Q03")
-    result = None   # edit this
+    result = sal.info()   # edit this
 
     print(result)   # Dont change this
 
@@ -42,7 +43,7 @@ def q03():
 
 def q04():
     print("Q04")
-    result = None   # edit this
+    result = sal['BasePay'].sum()/5   # edit this
 
     print(result)   # Dont change this
 
@@ -50,7 +51,7 @@ def q04():
 # 5) ** What is the highest amount of OvertimePay in the dataset ? **
 def q05():
     print("Q05")
-    result = None   # edit this
+    result = sal['OvertimePay'].max()   # edit this
 
     print(result)   # Dont change this
 
@@ -143,14 +144,14 @@ if __name__ == '__main__':
     q02()
     q03()
     q04()
-    q05()
-    q06()
-    q07()
-    q08()
-    q09()
-    q10()
-    q11()
-    q12()
-    q13()
-    q14()
-    q15()
+    # q05()
+    # q06()
+    # q07()
+    # q08()
+    # q09()
+    # q10()
+    # q11()
+    # q12()
+    # q13()
+    # q14()
+    # q15()
