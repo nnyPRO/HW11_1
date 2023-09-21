@@ -175,9 +175,9 @@ def q15():
     # sal['t'] = sal['JobTitle'].apply(len)
     # result = sal[['t','TotalPayBenefits' ]].corr()
     # result = None   # edit this
-    sal['t'] = sal['JobTitle'].apply(len)
+    sal['len_JobTitle'] = sal['JobTitle'].apply(lambda x: len(x))
     # corr_matrix = sal.corr(method ='pearson')#['TotalPayBenefits',sal['JobTitle'].apply(lambda x: len(x))]
-    result = sal[['t','TotalPayBenefits' ]].corr()
+    result = sal[['len_JobTitle','TotalPayBenefits' ]].corr()
     print(result)   # Dont change this
 
     
@@ -191,11 +191,11 @@ if __name__ == '__main__':
     # q05()
     # q06()
     # q07()
-    # q08()
-    # q09()
-    # q10()
-    # q11()
-    # q12()
-    # q13()
-    # q14()
+    q08()
+    q09()
+    q10()
+    q11()
+    q12()
+    q13()
+    q14()
     q15()
